@@ -1,0 +1,43 @@
+dev:
+  propel:
+    class: sfPropelDatabase
+    param:
+#      dsn: 'sqlite:%SF_CACHE_DIR%/ita.db'
+      dsn: 'mysql:host=localhost;dbname=ita'
+      username: root
+      password:
+
+demo:
+  propel:
+    class: sfPropelDatabase
+    param:
+      dsn: 'sqlite:%SF_DATA_DIR%/ita_demo.db'
+
+prod:
+  propel:
+    class: sfPropelDatabase
+    param:
+      dsn: 'sqlite:%SF_DATA_DIR%/ita_demo.db'
+
+test:
+  propel:
+    class: sfPropelDatabase
+    param:
+#      dsn: 'sqlite::memory:'
+      dsn: 'sqlite:%SF_DATA_DIR%/ita.db'
+#dsn: 'sqlite:/tmp/sqlite-folder/ita.db'
+#      dsn: 'mysql:host=localhost;dbname=ita'
+#      username: root
+#      password:
+
+unittest:
+  propel:
+    class: sfPropelDatabase
+    param:
+      dsn: 'sqlite:%SF_DATA_DIR%/ita_unit_test.db'
+#dsn: 'sqlite:/tmp/sqlite-folder/ita_unit_test.db'
+#      dsn: 'sqlite:memory'
+
+all:
+  propel:
+    class: sfPropelDatabase

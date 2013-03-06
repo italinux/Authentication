@@ -1,0 +1,231 @@
+.progress
+{
+  margin-left: 15px;
+}
+
+.milestone-red
+{
+  color: red;
+}
+
+.milestone-green
+{
+  color: green;
+}
+
+#sidebar form .box select
+{
+  width: 20%;
+}
+
+.square-green, .square-red, .square-yellow
+{
+  height: 20px;
+  padding-left: 20px;
+}
+
+.square-green { background:transparent url(../images/icons/16-ball-red.png) no-repeat scroll 0px 0px; }
+.square-red { background:transparent url(../images/icons/16-ball-green.png) no-repeat scroll 0px 0px; }
+.square-yellow { background:transparent url(../images/icons/16-ball-yellow.png) no-repeat scroll 0px 0px; }
+
+
+ul.add-time
+{
+  padding-left: 0;
+  margin:0 0 5px 0;
+}
+
+ul.add-time li
+{
+  display: block;
+  float: left;
+  list-style-image:url(none);
+  list-style-position:outside;
+  list-style-type:none;
+}
+
+
+ul.add-time li input
+{
+  margin: 0;
+  margin-bottom:3px;
+  margin-top:3px;
+  width: 100%;
+}
+
+form.new-log-time .confirm-box
+{
+  margin-bottom: 15px;
+}
+
+textarea
+{
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+
+input[type="text"]
+{
+  width: 100%;
+}
+
+#new .clear
+{
+  margin-bottom: 10px;
+}
+
+#new .menu
+{
+  margin-bottom: 6px;
+}
+
+.date select
+{
+  width: 30%;
+}
+
+.multiple-selection select
+{
+  height: 7em;
+}
+
+.description p
+{
+  margin-bottom: 10px;
+}
+
+.description ul
+{
+  list-style-type: none;
+}
+
+.description ul li
+{
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.description ul li.actions
+{
+  margin: 10px 0 10px 0;
+}
+
+#specifications div
+{
+  margin-bottom: 10px;
+}
+
+#specifications .key
+{
+  font-weight: bold;
+}
+
+#specifications ul
+{
+  list-style-type: none;
+}
+
+#specifications .description
+{
+  margin-bottom: 10px;
+}
+#specifications input
+{
+  margin: 0;
+}
+
+#specifications form .time input
+{
+  width: 80%;
+  margin-top: 1px;
+}
+
+#specifications .button
+{
+  padding: 1px;
+  border-width: 1px;
+}
+
+#specifications h3
+{
+  margin-bottom: 15px;
+}
+
+.title .actions
+{
+  font-size: small;
+  padding-top: 8px;
+  margin-bottom: 0px;
+}
+
+.title .actions a
+{
+  margin-left: 7px
+}
+
+#comments-list h4
+{
+  margin-bottom: 2px;
+}
+
+#fd_form
+{
+  margin-bottom: 10px;
+}
+
+#fd_form .button
+{
+  float: right;
+}
+
+#form-login input[type="text"], #form-login input[type="password"]
+{
+  width: 20%;
+}
+
+.specification
+{
+  margin-top: 15px;
+}
+
+.error ul.error_list
+{
+  list-style-type: none;
+  margin: 0;
+}
+
+#total_log_time
+{
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.settings
+{
+  margin-bottom: 1.2em;
+}
+
+.settings textarea, .settings select
+{
+  margin-bottom: 1.2em;
+}
+
+.project-user h4
+{
+  margin-bottom: 0px;
+}
+
+.project-user label
+{
+  float:left;
+  margin-top: 3px;
+  font-size: 1em;
+  width: 20%;
+}
+
+.project-user select
+{
+  float:right;
+  width: 80%;
+}

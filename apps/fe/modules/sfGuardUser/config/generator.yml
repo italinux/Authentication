@@ -1,0 +1,6 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    config:
+      form:
+        class: sfGuardUserAdminForm

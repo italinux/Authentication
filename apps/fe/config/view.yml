@@ -1,0 +1,20 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [schematic/grid.css, schematic/reset.css, schematic/typography.css, schematic/forms.css, custom.css, custom-update.css, custom-prod.css]
+
+  javascripts:    [jquery-1.4.2.min.js, jquery-ui-1.8.custom.min.js, form_show.js, add_form.js]
+
+  has_layout:     true
+  layout:         layout
+
+  components:
+    sidebar:      []

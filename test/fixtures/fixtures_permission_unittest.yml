@@ -1,0 +1,384 @@
+sfGuardUser:
+  sfGuardUser_1:
+    username: admin
+    algorithm: sha1
+    salt: cb7ddae023af5af0e091412bebe69e38
+    password: admin
+    is_active: true
+    is_super_admin: true
+    last_login: null
+    email_address: example1@example.com
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-1 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-1 day")); ?>'
+  sfGuardUser_2:
+    username: user
+    algorithm: sha1
+    salt: 7042a9a97aab3384e472d917ea493730
+    password: user
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    email_address: example2@example.com
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-1 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-1 day")); ?>'
+  sfGuardUser_3:
+    username: puser
+    algorithm: sha1
+    salt: 855a7d1f9b163e84ca2c4941d667f9dd
+    password: puser
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    email_address: example3@example.com
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-1 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-1 day")); ?>'
+  sfGuardUser_4:
+    username: nopuser
+    algorithm: sha1
+    salt: 5aa8032282daf8ba303e76cac1c87005
+    password: nopuser
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    email_address: example4@example.com
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-1 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-1 day")); ?>'
+  sfGuardUser_5:
+    username: userp2
+    algorithm: sha1
+    salt: 5aa8032282daf8ba303e76cac1c87005
+    password: userp2
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    email_address: example5@example.com
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-1 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-1 day")); ?>'
+  sfGuardUser_6:
+    username: sesto
+    algorithm: sha1
+    salt: 5aa8032282daf8ba303e76cac1c87005
+    password: sesto
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    email_address: example6@example.com
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-1 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-1 day")); ?>'
+
+sfGuardGroup:
+  sfGuardGroup_1:
+    name: admin
+    description: 'Administrator group'
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+  sfGuardGroup_2:
+    name: user
+    description: 'User group'
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+
+sfGuardGroupPermission:
+  sfGuardGroupPermission_1_1:
+    Group: sfGuardGroup_1
+    Permission: sfGuardPermission_1
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+  sfGuardGroupPermission_2_2:
+    Group: sfGuardGroup_2
+    Permission: sfGuardPermission_2
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+
+sfGuardPermission:
+  sfGuardPermission_1:
+    name: admin
+    description: 'Administrator permission'
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+  sfGuardPermission_2:
+    name: user
+    description: 'Basic user permission'
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+
+sfGuardUserGroup:
+  sfGuardUserGroup_1_1:
+    User: sfGuardUser_1
+    Group: sfGuardGroup_1
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+  sfGuardUserGroup_2_2:
+    User: sfGuardUser_2
+    Group: sfGuardGroup_2
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+  sfGuardUserGroup_3_2:
+    User: sfGuardUser_3
+    Group: sfGuardGroup_2
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+  sfGuardUserGroup_5_2:
+    User: sfGuardUser_5
+    Group: sfGuardGroup_2
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+  sfGuardUserGroup_6_2:
+    User: sfGuardUser_6
+    Group: sfGuardGroup_2
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+
+IssueUser:
+  IssueUser_1:
+    Issue: Issue_1
+    sfGuardUser: sfGuardUser_3
+  IssueUser_2:
+    Issue: Issue_2
+    sfGuardUser: sfGuardUser_2
+  IssueUser_2_1:
+    Issue: Issue_2
+    sfGuardUser: sfGuardUser_3
+  IssueUser_3:
+    Issue: Issue_3
+    sfGuardUser: sfGuardUser_2
+  IssueUser_4:
+    Issue: Issue_4
+    sfGuardUser: sfGuardUser_2
+  IssueUser_5:
+    Issue: Issue_5
+    sfGuardUser: sfGuardUser_2
+  IssueUser_6:
+    Issue: Issue_6
+    sfGuardUser: sfGuardUser_2
+  IssueUser_7:
+    Issue: Issue_7
+    sfGuardUser: sfGuardUser_2
+  IssueUser_8:
+    Issue: Issue_8
+    sfGuardUser: sfGuardUser_2
+  IssueUser_9:
+    Issue: Issue_9
+    sfGuardUser: sfGuardUser_2
+  IssueUser_10:
+    Issue: Issue_10
+    sfGuardUser: sfGuardUser_2
+  IssueUser_11:
+    Issue: Issue_11
+    sfGuardUser: sfGuardUser_2
+  IssueUser_12:
+    Issue: Issue_12
+    sfGuardUser: sfGuardUser_2
+
+ProjectUser:
+  ProjectUser_1:
+    Project: Project_3
+    sfGuardUser: sfGuardUser_3
+  ProjectUser_2:
+    Project: Project_2
+    sfGuardUser: sfGuardUser_3
+  ProjectUser_3:
+    Project: Project_3
+    sfGuardUser: sfGuardUser_2
+  ProjectUser_5:
+    Project: Project_2
+    sfGuardUser: sfGuardUser_5
+  ProjectUser_4:
+    Project: Project_4
+    sfGuardUser: sfGuardUser_3
+
+Status:
+  Status_1:
+    name: new
+    status_type: new
+    position: 0
+  Status_2:
+    name: invalid
+    status_type: invalid
+    position: 1
+
+Project:
+  Project_1:
+    name: 'Il mio primo progetto'
+    description: 'Il primo progetto creato con il plugin idProjectManagementPlugin'
+    is_public: false
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-1 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-1 hours")); ?>'
+  Project_2:
+    name: 'Il mio secondo progetto'
+    description: 'Il secondo progetto creato con il plugin idProjectManagementPlugin'
+    is_public: false
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-2 hours")); ?>'
+  Project_3:
+    name: 'Il mio terzo progetto'
+    description: 'Il terzo progetto creato con il plugin idProjectManagementPlugin'
+    is_public: true
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-3 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-3 hours")); ?>'
+  Project_4:
+    name: 'Il mio quarto progetto'
+    description: 'Il quarto progetto creato con il plugin idProjectManagementPlugin'
+    is_public: false
+    created_at: '<?php echo date("Y-m-d H:i:s", strtotime("-4 day")); ?>'
+    updated_at: '<?php echo date("Y-m-d H:i:s", strtotime("-4 hours")); ?>'
+
+Issue:
+  Issue_1:
+    project: Project_3
+    status: Status_1
+    priority: Priority_1
+    title: 'new issue'
+    description: 'new issue'
+    starting_date: '<?php echo date("Y-m-d", strtotime('today')); ?>'
+    ending_date: '<?php echo date("Y-m-d", strtotime("+10 day")); ?>'
+<?php for ($i = 2; $i < 50; $i++): ?>
+  Issue_<?php echo $i; ?>:
+    project: Project_3
+    status: Status_1
+    priority: Priority_1
+    title: 'new issue <?php echo $i ?>'
+    description: 'new issue'
+    starting_date: '<?php echo date("Y-m-d", strtotime('today')); ?>'
+    ending_date: '<?php echo date("Y-m-d", strtotime("+10 day")); ?>'
+<?php endfor; ?>
+<?php for ($i = 51; $i < 70; $i++): ?>
+  Issue_<?php echo $i; ?>:
+    project: Project_3
+    status: Status_1
+    milestone: Milestone_3
+    priority: Priority_1
+    title: 'new issue <?php echo $i ?>'
+    description: 'new issue'
+    starting_date: '<?php echo date("Y-m-d", strtotime('today')); ?>'
+    ending_date: '<?php echo date("Y-m-d", strtotime("+10 day")); ?>'
+<?php endfor; ?>
+  Issue_71:
+    project: Project_1
+    status: Status_1
+    priority: Priority_1
+    title: 'new issue project 1'
+    description: 'new issue project 1'
+    starting_date: '<?php echo date("Y-m-d", strtotime('today')); ?>'
+    ending_date: '<?php echo date("Y-m-d", strtotime("+10 day")); ?>'
+<?php for ($i = 1; $i <= 3; $i++): ?>
+  Issue_<?php echo $i+71; ?>:
+    project: Project_2
+    status: Status_1
+    milestone: Milestone_4
+    priority: Priority_1
+    title: 'p2 first iterazione issue <?php echo $i ?>'
+    description: 'description p2 first iterazione issue <?php echo $i ?>'
+    starting_date: '<?php echo date("Y-m-d", strtotime('today')); ?>'
+    ending_date: '<?php echo date("Y-m-d", strtotime("+10 day")); ?>'
+<?php endfor; ?>
+<?php for ($i = 1; $i <= 3; $i++): ?>
+  Issue_<?php echo $i+74; ?>:
+    project: Project_2
+    status: Status_1
+    milestone: Milestone_5
+    priority: Priority_1
+    title: 'p2 second iterazione issue <?php echo $i ?>'
+    description: 'description p2 first iterazione issue <?php echo $i ?>'
+    starting_date: '<?php echo date("Y-m-d", strtotime('today')); ?>'
+    ending_date: '<?php echo date("Y-m-d", strtotime("+10 day")); ?>'
+<?php endfor; ?>
+
+Priority:
+  Priority_1:
+    name: normal
+    position: 0
+  Priority_2:
+    name: high
+    position: 1
+
+Milestone:
+  Milestone_1:
+    title: 'first iteration'
+    description: 'first iteration for project 1'
+    starting_date: null
+    ending_date: null
+    project: Project_1
+  Milestone_2:
+    title: 'second iteration'
+    description: 'second iteration for project one'
+    starting_date: null
+    ending_date: null
+    project: Project_1
+  Milestone_3:
+    title: 'third iteration'
+    description: 'third iteration for project 3'
+    starting_date: null
+    ending_date: null
+    project: Project_3
+  Milestone_4:
+    title: 'first iteration'
+    description: 'first iteration for project 2'
+    starting_date: null
+    ending_date: null
+    project: Project_2
+  Milestone_5:
+    title: 'second iteration'
+    description: 'second iteration for project 2'
+    starting_date: null
+    ending_date: null
+    project: Project_2
+
+IssueReference:
+  RelatedIssue_1_2:
+    issue1: '1'
+    issue2: '2'
+  RelatedIssue_1_3:
+    issue1: '1'
+    issue2: '3'
+  RelatedIssue_1_4:
+    issue1: '1'
+    issue2: '4'
+  RelatedIssue_5_1:
+    issue1: '5'
+    issue2: '1'
+  RelatedIssue_1_11:
+    issue1: '1'
+    issue2: '11'
+  RelatedIssue_1_12:
+    issue1: '1'
+    issue2: '12'
+  RelatedIssue_1_13:
+    issue1: '1'
+    issue2: '13'
+  RelatedIssue_1_14:
+    issue1: '1'
+    issue2: '14'
+  RelatedIssue_1_25:
+    issue1: '1'
+    issue2: '15'
+  RelatedIssue_1_16:
+    issue1: '1'
+    issue2: '16'
+  RelatedIssue_1_17:
+    issue1: '1'
+    issue2: '17'
+  RelatedIssue_1_18:
+    issue1: '1'
+    issue2: '18'
+  RelatedIssue_1_19:
+    issue1: '1'
+    issue2: '19'
+  RelatedIssue_1_20:
+    issue1: '1'
+    issue2: '20'
+  RelatedIssue_1_21:
+    issue1: '1'
+    issue2: '21'
+  RelatedIssue_1_22:
+    issue1: '1'
+    issue2: '22'
+  RelatedIssue_1_23:
+    issue1: '1'
+    issue2: '23'
+  RelatedIssue_1_24:
+    issue1: '1'
+    issue2: '24'
+  RelatedIssue_1_25:
+    issue1: '1'
+    issue2: '25'

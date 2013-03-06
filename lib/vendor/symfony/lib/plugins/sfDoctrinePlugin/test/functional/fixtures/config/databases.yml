@@ -1,0 +1,15 @@
+all:
+  propel1:
+    class:          sfPropelDatabase
+    param:
+      dsn:          sqlite:///%SF_DATA_DIR%/database1.sqlite
+  propel2:
+    class:          sfPropelDatabase
+    param:
+      dsn:          sqlite:///%SF_DATA_DIR%/database2.sqlite
+  propel3:
+    class:          sfPropelDatabase
+    param:
+      dsn:          sqlite:///%SF_DATA_DIR%/database3.sqlite
+      attributes:
+        export:     tables

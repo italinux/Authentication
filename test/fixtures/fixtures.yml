@@ -1,0 +1,36 @@
+
+<?php include(dirname(__FILE__).'/sfGuardUser.yml') ?>
+
+<?php include(dirname(__FILE__).'/sfGuardGroup.yml') ?>
+
+<?php include(dirname(__FILE__).'/sfGuardPermission.yml') ?>
+
+<?php include(dirname(__FILE__).'/sfGuardGroupPermission.yml') ?>
+
+<?php include(dirname(__FILE__).'/sfGuardUserGroup.yml') ?>
+
+<?php include(dirname(__FILE__).'/projects.yml') ?>
+
+<?php include(dirname(__FILE__).'/milestones.yml') ?>
+
+<?php include(dirname(__FILE__).'/tracker.yml') ?>
+
+<?php include(dirname(__FILE__).'/priorities.yml') ?>
+
+<?php include(dirname(__FILE__).'/statuses.yml') ?>
+
+<?php include(dirname(__FILE__).'/issues.yml') ?>
+
+<?php include(dirname(__FILE__).'/issue_user.yml') ?>
+
+<?php include(dirname(__FILE__).'/project_user.yml') ?>
+
+<?php include(dirname(__FILE__).'/logtime.yml') ?>
+
+<?php include(dirname(__FILE__).'/project_trackers.yml') ?>
+
+<?php include(dirname(__FILE__).'/message.yml') ?>
+
+<?php include(dirname(__FILE__).'/comment.yml') ?>
+
+<?php include(dirname(__FILE__).'/related_issues.yml') ?>

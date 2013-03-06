@@ -1,0 +1,6 @@
+autoload:
+  sfPropelPlugin_lib:
+    name:       sfPropelPlugin lib
+    path:       %SF_SYMFONY_LIB_DIR%/plugins/sfPropelPlugin/lib
+    recursive:  true
+    exclude:    [propel]

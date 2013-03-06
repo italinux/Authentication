@@ -1,0 +1,21 @@
+# default rules
+#homepage:
+#  url:   /:sf_culture
+#  param: { module: default, action: index, sf_culture: en}
+
+homepage:
+  url:   /:sf_culture
+  param: { module: idDashboard, action: index, sf_culture: en}
+  requirements:
+    sf_culture: (?:en|it)
+
+default_index:
+  url:   /:sf_culture/:module
+  param: { action: index }
+  requirements:
+    sf_culture: (?:en|it)
+
+default:
+  url:   /:sf_culture/:module/:action/*
+  requirements:
+    sf_culture: (?:en|it)

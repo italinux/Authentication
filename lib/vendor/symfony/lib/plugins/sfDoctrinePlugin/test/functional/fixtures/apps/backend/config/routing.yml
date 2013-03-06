@@ -1,0 +1,109 @@
+propel_route_test1:
+  url:   /propel/route/test1
+  class: sfPropelRoute
+  options: { model: Article, type: object, method_for_query: retrieveArticle1 }
+  param: { module: propel_route_test, action: index }
+
+propel_route_test2:
+  url:   /propel/route/test2
+  class: sfPropelRoute
+  options: { model: Article, type: object, method: retrieveArticle2 }
+  param: { module: propel_route_test, action: index }
+
+propel_route_test3:
+  url:   /propel/route/test3
+  class: sfPropelRoute
+  options: { model: Article, type: list, method: retrieveArticle3 }
+  param: { module: propel_route_test, action: index }
+
+propel_route_test4:
+  url:   /propel/route/test4
+  class: sfPropelRoute
+  options: { model: Article, type: list, method: retrieveArticle4 }
+  param: { module: propel_route_test, action: index }
+
+propel_route_test5:
+  url:   /propel/route/test5/:id/:testing_non_column
+  class: sfPropelRoute
+  options: { model: Article, type: object }
+  param: { module: propel_route_test, action: index }
+
+propel_route_test6:
+  url:   /propel/route/test6/:slug/:testing_non_column
+  class: sfPropelRoute
+  options: { model: Article, type: object }
+  param: { module: propel_route_test, action: index }
+
+propel_route_test7:
+  url:   /propel/route/test7/:testing_non_column
+  class: sfPropelRoute
+  options: { model: Article, type: list }
+  param: { module: propel_route_test, action: index }
+
+propel_route_test8:
+  url:   /propel/route/test8/:id/:slug/:title/:testing_non_column2
+  class: sfPropelRoute
+  options: { model: Article, type: object }
+  param: { module: propel_route_test, action: index }
+
+propel_route_test9:
+  url:   /propel/route/test9/:id/:slug/:title/:testing_non_column
+  class: sfPropelRoute
+  options: { model: Article, type: object, method: routeTest9 }
+  param: { module: propel_route_test, action: index }
+
+propel_route_test10:
+  url:   /propel/route/test10/:is_on_homepage/:testing_non_column
+  class: sfPropelRoute
+  options: { model: Article, type: list, method_for_query: routeTest10 }
+  param: { module: propel_route_test, action: index }
+
+user:
+  class: sfPropelRouteCollection
+  options:
+    model:               User
+    module:              users
+    prefix_path:         users
+    column:              id
+    with_wildcard_routes: true
+
+subscription:
+  class: sfPropelRouteCollection
+  options:
+    model:               Subscription
+    module:              subscriptions
+    prefix_path:         subscriptions
+    column:              id
+    with_wildcard_routes: true
+
+author:
+  class: sfPropelRouteCollection
+  options:
+    model:               Author
+    module:              authors
+    prefix_path:         authors
+    column:              id
+    with_wildcard_routes: true
+
+my_articles:
+  class: sfPropelRouteCollection
+  options:
+    model:               Article
+    module:              my_articles
+    prefix_path:         my_articles
+    column:              id
+    with_wildcard_routes: true
+
+article:
+  class: sfPropelRouteCollection
+  options:
+    model:               Article
+    module:              articles
+    prefix_path:         articles
+    column:              id
+    with_wildcard_routes: true
+
+# default rules
+homepage:
+  url:   /
+  param: { module: default, action: index }
